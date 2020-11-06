@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background: #252525;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  background: #3d3d3d;
+  position: fixed;
+  width: 100vw;
+  height: 6rem;
+}
+
+header nav {
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: calc(0.5rem + 1vw);
+  color: white;
+}
+
+header li:hover {
+  background: #585858;
+  -webkit-box-shadow: 2px 0px 5px #1f1e1e;
+          box-shadow: 2px 0px 5px #1f1e1e;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.hero {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#000000), to(#0000005e)), url(../images/heroPic.jpg);
+  background: linear-gradient(90deg, #000000, #0000005e), url(../images/heroPic.jpg);
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 100;
+}
+
+.hero .hero-content {
+  color: white;
+  text-align: center;
+  padding: calc(15rem + 1vw);
+}
+
+.hero .hero-content h1 {
+  font-size: calc(5rem + 1vw);
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.hero .hero-content h2 {
+  font-size: calc(1.8rem + 1vw);
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.hero .hero-content p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  word-spacing: 0.3rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.music {
+  min-height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */

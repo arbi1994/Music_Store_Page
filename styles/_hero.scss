@@ -1,0 +1,33 @@
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #000000, #0000005e),
+    url(../images/heroPic.jpg);
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  display: flex;
+  align-items: flex-start;
+  z-index: 100;
+  .hero-content {
+    color: $main-font-color;
+    text-align: center;
+    padding: calc(15rem + 1vw);
+    h1 {
+      font-size: $h1;
+      font-weight: 500;
+      margin-bottom: 4rem;
+    }
+    h2 {
+      font-size: $h2;
+      font-weight: 500;
+      margin-bottom: 3rem;
+    }
+    p {
+      font-size: 1.8rem;
+      font-weight: 300;
+      word-spacing: 0.3rem;
+      line-height: 3rem;
+      text-align: center;
+    }
+  }
+}

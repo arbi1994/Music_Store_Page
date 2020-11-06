@@ -1,0 +1,31 @@
+header {
+  background: $background-header;
+  position: fixed;
+  width: 100vw;
+  height: 6rem;
+  nav {
+    min-height: 10vh;
+    display: flex;
+    ul {
+      width: 40%;
+      display: flex;
+      li {
+        position: relative;
+        list-style: none;
+        text-align: center;
+        padding: 2rem 0;
+        width: 100%;
+        a {
+          text-decoration: none;
+          font-size: $a;
+          color: $main-font-color;
+        }
+      }
+    }
+  }
+  li:hover {
+    background: rgb(88, 88, 88);
+    box-shadow: 2px 0px 5px rgb(31, 30, 30);
+    transition: all 0.5s ease;
+  }
+}
