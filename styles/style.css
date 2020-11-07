@@ -7,8 +7,12 @@
 
 html {
   font-size: 62.5%;
-  background: #252525;
   font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  line-height: 3rem;
+  background: #252525;
 }
 
 header {
@@ -16,6 +20,7 @@ header {
   position: fixed;
   width: 100vw;
   height: 6rem;
+  z-index: 100;
 }
 
 header nav {
@@ -56,25 +61,20 @@ header li:hover {
 
 .hero {
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, right top, from(#000000), to(#0000005e)), url(../images/heroPic.jpg);
-  background: linear-gradient(90deg, #000000, #0000005e), url(../images/heroPic.jpg);
-  background-position: center;
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  z-index: 100;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 
 .hero .hero-content {
   color: white;
   text-align: center;
   padding: calc(15rem + 1vw);
+  z-index: 50;
 }
 
 .hero .hero-content h1 {
@@ -97,9 +97,26 @@ header li:hover {
   text-align: center;
 }
 
+.hero:before {
+  content: "";
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#000000), to(#0000005e)), url(../images/heroPic.jpg);
+  background: linear-gradient(90deg, #000000, #0000005e), url(../images/heroPic.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
 .music {
   min-height: 100vh;
   color: white;
+  padding-top: 4rem;
 }
 
 .music .music-content {
@@ -110,7 +127,7 @@ header li:hover {
 .music .music-content h1 {
   font-size: calc(3rem + 1vw);
   font-weight: 500;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .music .music-content h1 .fa-music {
@@ -128,7 +145,6 @@ header li:hover {
 .music .music-content p {
   font-size: calc(0.5rem + 1vw);
   margin: 4rem 0 2rem 0;
-  line-height: 3rem;
 }
 
 .music .music-content a {
@@ -137,16 +153,19 @@ header li:hover {
   padding: 1.8rem 1rem;
   font-size: 1.6rem;
   background: #aba2d3;
+  color: black;
   border: none;
   cursor: pointer;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .music .music-content a:hover {
   background: #8871ee;
+  color: white;
   -webkit-box-shadow: 0px 0px 5px #8871ee, 0px 0px 15px #8871ee, 0px 0px 25px #8871ee, 0px 0px 35px #8871ee, 0px 0px 45px #8871ee;
           box-shadow: 0px 0px 5px #8871ee, 0px 0px 15px #8871ee, 0px 0px 25px #8871ee, 0px 0px 35px #8871ee, 0px 0px 45px #8871ee;
+  border-radius: 1rem;
 }
 
 .music .music-content h5 {
@@ -158,6 +177,54 @@ header li:hover {
 
 .music img {
   width: 100%;
+  padding: 0 15rem 4rem 15rem;
+}
+
+.video {
+  min-height: 100vh;
+  color: black;
+  background: #e4e2e2;
+  padding-top: 5rem;
+}
+
+.video .video-content {
+  text-align: center;
   padding: 0 15rem;
+  overflow: hidden;
+}
+
+.video .video-content h2 {
+  font-size: calc(1.8rem + 1vw);
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-top: 3rem;
+}
+
+.video .video-content p {
+  font-size: calc(0.5rem + 1vw);
+  margin: 4rem 0 2rem 0;
+}
+
+.video .video-content a {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 1.5rem 1.2rem;
+  font-size: 1.6rem;
+  background: #aba2d3;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.video .video-content a:hover {
+  background: #6f64a3;
+  color: white;
+  border-radius: 1rem;
+}
+
+.video img {
+  width: 100%;
+  padding: 0 15rem 1rem 15rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,7 @@ header {
   position: fixed;
   width: 100vw;
   height: 6rem;
+  z-index: 100;
   nav {
     min-height: 10vh;
     display: flex;

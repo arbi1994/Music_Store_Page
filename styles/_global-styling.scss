@@ -5,6 +5,9 @@
 }
 html {
   font-size: 62.5%;
-  background: $background-main;
   font-family: "Ubuntu", sans-serif;
+}
+body {
+  line-height: 3rem;
+  background: $background-main;
 }
