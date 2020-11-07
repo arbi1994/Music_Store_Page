@@ -15,6 +15,13 @@ body {
   background: #252525;
 }
 
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
 header {
   background: #3d3d3d;
   position: fixed;
@@ -109,8 +116,8 @@ header li:hover {
      object-fit: cover;
   width: 100%;
   height: 100%;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
 }
 
 .music {
@@ -270,5 +277,67 @@ header li:hover {
 .entertainment img {
   width: 100%;
   padding: 0 15rem 1rem 15rem;
+}
+
+.gift-card {
+  min-height: 60vh;
+  background: white;
+  -webkit-column-gap: 4rem;
+          column-gap: 4rem;
+  padding: 2rem 15rem;
+  color: #3d3d3d;
+}
+
+.gift-card .img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background: url(../images/cards.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gift-card .description {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  position: relative;
+}
+
+.gift-card .description h3 {
+  font-size: calc(1.6rem + 1vw);
+  font-weight: 500;
+  padding: 4rem 0 3rem 0;
+}
+
+.gift-card .description p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.gift-card .description hr {
+  width: 100%;
+  position: absolute;
+}
+
+.gift-card .description a {
+  display: inline-block;
+  font-size: calc(0.5rem + 1vw);
+  font-weight: 400;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #3d3d3d;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.gift-card .description a:hover {
+  color: black;
+  font-size: 2.4rem;
 }
 /*# sourceMappingURL=style.css.map */

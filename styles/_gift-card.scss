@@ -1,0 +1,47 @@
+.gift-card {
+  min-height: 60vh;
+  background: white;
+  column-gap: 4rem;
+  padding: 2rem 15rem;
+  color: $background-header;
+  .img {
+    grid-column: 1/2;
+    background: url(../images/cards.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+  .description {
+    grid-column: 2/3;
+    position: relative;
+    h3 {
+      font-size: $h3;
+      font-weight: 500;
+      padding: 4rem 0 3rem 0;
+    }
+    p {
+      font-size: 1.6rem;
+      font-weight: 300;
+      line-height: 2.5rem;
+      padding-bottom: 1rem;
+    }
+    hr {
+      width: 100%;
+      position: absolute;
+    }
+    a {
+      display: inline-block;
+      font-size: $a;
+      font-weight: 400;
+      margin-top: 1rem;
+      text-decoration: none;
+      color: $background-header;
+      transition: all 0.3s ease-in-out;
+    }
+    a:hover {
+      color: black;
+      font-size: 2.4rem;
+    }
+  }
+}
