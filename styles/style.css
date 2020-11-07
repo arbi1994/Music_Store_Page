@@ -138,6 +138,15 @@ header li:hover {
   font-size: 1.6rem;
   background: #aba2d3;
   border: none;
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.music .music-content a:hover {
+  background: #8871ee;
+  -webkit-box-shadow: 0px 0px 5px #8871ee, 0px 0px 15px #8871ee, 0px 0px 25px #8871ee, 0px 0px 35px #8871ee, 0px 0px 45px #8871ee;
+          box-shadow: 0px 0px 5px #8871ee, 0px 0px 15px #8871ee, 0px 0px 25px #8871ee, 0px 0px 35px #8871ee, 0px 0px 45px #8871ee;
 }
 
 .music .music-content h5 {
