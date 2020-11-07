@@ -1,0 +1,32 @@
+.entertainment {
+  min-height: 70vh;
+  color: white;
+  background-image: url(../images/entertainment_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  object-fit: cover;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .entertainment-content {
+    text-align: center;
+    padding: 0 15rem;
+    overflow: hidden;
+    h2 {
+      font-size: $h2;
+      font-weight: 500;
+      letter-spacing: 0.2rem;
+      padding-bottom: 2rem;
+    }
+    p {
+      font-size: $a;
+      margin: 4rem 0 2rem 0;
+    }
+  }
+  img {
+    width: 100%;
+    padding: 0 15rem 1rem 15rem;
+  }
+}
