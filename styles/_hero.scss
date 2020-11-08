@@ -4,9 +4,11 @@
   align-items: center;
   position: relative;
   .hero-content {
+    max-width: 1160px;
     color: $main-font-color;
     text-align: center;
-    padding: calc(15rem + 1vw);
+    padding: 0 5rem;
+    margin: 0 auto;
     z-index: 50;
     h1 {
       font-size: $h1;
@@ -38,4 +40,13 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 562px){
+  .hero{
+    min-height: 60vh;
+    .hero-content{
+      transform: translateY(20%);
+    }
+  }
 }

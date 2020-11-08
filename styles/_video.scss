@@ -4,8 +4,10 @@
   background: rgb(228, 226, 226);
   padding-top: 5rem;
   .video-content {
+    max-width: 1160px;
     text-align: center;
-    padding: 0 15rem;
+    padding: 0 5rem;
+    margin: 0 auto;
     overflow: hidden;
     h2 {
       font-size: $h2;
@@ -32,12 +34,25 @@
       background: rgb(255, 255, 255);
       color: black;
       // color: white;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       box-shadow: 0px 3px 15px 0px rgb(194, 194, 194);
     }
+    img {
+      width: 100%;
+    }
   }
-  img {
-    width: 100%;
-    padding: 0 15rem 2rem 15rem;
+}
+
+@media screen and (max-width: 562px){
+  .video{
+    min-height: 90vh;
+    .video-content{
+      h2{
+        margin-top: 1rem;
+      }
+      a{
+        margin: 2rem 0;
+      }
+    }
   }
 }

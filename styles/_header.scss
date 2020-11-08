@@ -3,12 +3,12 @@ header {
   position: fixed;
   width: 100vw;
   height: 6rem;
-  z-index: 100;
+  z-index: 2;
   nav {
     min-height: 10vh;
     display: flex;
     ul {
-      width: 40%;
+      min-width: 50vw;
       display: flex;
       li {
         position: relative;
@@ -28,5 +28,61 @@ header {
     background: rgb(88, 88, 88);
     box-shadow: 2px 0px 5px rgb(31, 30, 30);
     transition: all 0.5s ease;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: right;
+    ul {
+      display: none !important;
+    }
+    .burger-menu {
+      width: 40px;
+      height: 40px;
+      // border: 1px solid white;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 1rem 2rem;
+      cursor: pointer;
+      transition: all 300ms ease-in-out;
+      span {
+        width: 100%;
+        height: 4px;
+        background: white;
+        border-radius: 2px;
+        transition: all 300ms ease-in-out;
+      }
+      .active.line1 {
+        animation: rotation 0.2s ease;
+        transform: rotateZ(45deg) translate(20%, 140%);
+      }
+      .active.line2 {
+        display: none;
+      }
+      .active.line3 {
+        animation: rotationReverse 0.2s ease;
+        transform: rotateZ(-45deg) translate(20%, -140%);
+      }
+    }
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(405deg);
+  }
+}
+@keyframes rotationReverse {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
   }
 }

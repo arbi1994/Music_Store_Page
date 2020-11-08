@@ -10,11 +10,12 @@ html {
 body {
   line-height: 3rem;
   background: $background-main;
+  overflow-x: hidden;
 }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
+// .grid {
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr);
+// }
 .footer-grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
