@@ -172,6 +172,7 @@ header li:hover {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  background: black;
 }
 
 .hero .hero-content {
@@ -180,7 +181,7 @@ header li:hover {
   text-align: center;
   padding: 0 5rem;
   margin: 0 auto;
-  z-index: 50;
+  z-index: 1;
 }
 
 .hero .hero-content h1 {
@@ -208,9 +209,9 @@ header li:hover {
   position: absolute;
   background: -webkit-gradient(linear, left top, right top, from(#000000), to(#0000005e)), url(../images/heroPic.jpg);
   background: linear-gradient(90deg, #000000, #0000005e), url(../images/heroPic.jpg);
-  background-position: center;
+  background-position-y: 30%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
