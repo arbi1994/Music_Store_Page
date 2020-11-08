@@ -1,0 +1,37 @@
+.content{
+    padding: 4rem 25rem;
+    column-gap: 6rem;
+    background: $background-main;
+    ul{
+        h5{
+            color: white;
+            font-size: $h5;
+            font-weight: 400;
+            border-bottom: 1px solid rgb(78, 78, 78);
+            padding: 1rem 0 .5rem 0;
+        }
+        li{
+            list-style: none;
+            line-height: 2.5rem;
+            a{
+                color: rgb(189, 188, 188);
+                text-decoration: none;
+                font-size: 1.4rem;
+            }
+        }
+        li:first-of-type{
+            padding-top: 1.5rem;
+        }
+    }
+}
+.copyright{
+    min-height: 8vh;
+    background: $background-header;
+    h5{
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+        padding: 1.5rem 0;
+    }
+}

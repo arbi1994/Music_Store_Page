@@ -22,6 +22,13 @@ body {
       grid-template-columns: repeat(2, 1fr);
 }
 
+.footer-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
 header {
   background: #3d3d3d;
   position: fixed;
@@ -305,6 +312,7 @@ header li:hover {
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   position: relative;
+  top: 10%;
 }
 
 .gift-card .description h3 {
@@ -332,12 +340,66 @@ header li:hover {
   margin-top: 1rem;
   text-decoration: none;
   color: #3d3d3d;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 
-.gift-card .description a:hover {
-  color: black;
+.gift-card .description #redeem:hover {
+  -webkit-transform: translateX(2rem);
+          transform: translateX(2rem);
+  color: #f3b823;
+  text-shadow: 1px 1px 1px #303030;
+}
+
+.gift-card .description #redeem:hover .fa-chevron-right {
+  color: #df2e86;
   font-size: 2.4rem;
+  -webkit-transform: translateX(-2rem);
+          transform: translateX(-2rem);
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.content {
+  padding: 4rem 25rem;
+  -webkit-column-gap: 6rem;
+          column-gap: 6rem;
+  background: #252525;
+}
+
+.content ul h5 {
+  color: white;
+  font-size: calc(.2rem + 1vw);
+  font-weight: 400;
+  border-bottom: 1px solid #4e4e4e;
+  padding: 1rem 0 .5rem 0;
+}
+
+.content ul li {
+  list-style: none;
+  line-height: 2.5rem;
+}
+
+.content ul li a {
+  color: #bdbcbc;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.content ul li:first-of-type {
+  padding-top: 1.5rem;
+}
+
+.copyright {
+  min-height: 8vh;
+  background: #3d3d3d;
+}
+
+.copyright h5 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 1.5rem 0;
 }
 /*# sourceMappingURL=style.css.map */
